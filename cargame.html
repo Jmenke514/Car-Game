@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Car Simulator</title>
+  <link type="text/css" href="cargame.css" rel="stylesheet"/>
+  <script type="text/javascript" src="cargame.js"></script>
+</head>
+
+
+<body>
+  <h1>Car Simulator</h1>
+  <section id="makerBar">
+    <span>Make</span>
+    <input type="text" id="inputMake"/>
+    <span>Model</span>
+    <input type="text" id="inputModel"/>
+    <span>Year</span>
+    <input type="text" id="inputYear"/>
+    <input type="button" value="Make Car" id="makeCar" onclick="createCarButton()"/>
+  </section>
+
+  <div>
+    <h1>Make: <span id="makeSpan">_</span></h1>
+    <h1>Model: <span id="modelSpan">_</span></h1>
+    <h1>Year: <span id="yearSpan">_</span></h1>
+    <h1>Speed: <span id="speedSpan">_</span></h1>
+  </div>
+
+  <input type="button" value="Brake" onclick="decelCar()"/>
+  <input type="button" value="Bad Brake" onclick="badDecel()"/>
+  <input type="button" value="Accelerate" onclick="accelCar()"/>
+
+  <input type="button" value="Up to 70" onclick="speedUp()"/>
+  <input type="button" value="Down to 0" onclick="speedDown()"/>
+
+</body>
+
+<html>
